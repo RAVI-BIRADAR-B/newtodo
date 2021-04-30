@@ -20,6 +20,8 @@ const App: React.FC = () => {
           complete: !todo.complete
         }
       }
+
+      
       return todo;
     });
     setTodos(newTodos);
@@ -35,7 +37,7 @@ const App: React.FC = () => {
    
       <div className="container" >
       <AddTodoForm addTodo={addTodo} />
-      
+
       <TodoList  todos={todos} toggleTodo={toggleTodo}   />
 
       </div>
